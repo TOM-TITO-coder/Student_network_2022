@@ -1,94 +1,162 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-  }
-  
-header {
-    background-color: #6B70EA;
-    color: #FEFEFE;
-    padding: 10px;
+*{
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
 }
-  
-h1 {
-    margin: 0;
+
+.container{
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(/student_network_2022/assets/images/background1.jpg);
+  background-position: center;
+  background-size: cover;
+  padding: 8%;
+  margin-right: 8%;
 }
-  
-nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+
+.navbar{
+  height: 12px;
+  display: flex;
+  align-items: center;
 }
-  
-nav li {
-    display: inline-block;
-    margin-right: 30px;
+
+.logo{
+  width: 100px;
+  cursor: pointer;
 }
-  
-nav li:last-child {
-    margin-right: 0;
+
+.menu-icon{
+  width: 30px;
+  cursor: pointer;
+  margin-left: 20px;
 }
-  
-nav a {
-    color: #000000;
-    text-decoration: none;
+
+nav{
+  flex: 1;
+  text-align: right;
 }
-  
-nav li input {
-    margin-left: 1500px;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    width: 365px;
-    height: 33px;
-    padding: 10px;
-    margin-bottom: 10px;
+
+nav ul li{
+  list-style: none;
+  display: inline-block;
+  margin-left: 60px;
 }
-  
-  main {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-  }
-  
-  section {
-    margin-bottom: 20px;
-  }
-  
-  h2 {
-    color: #333;
-  }
-  
-  ul {
-    list-style: disc;
-    margin-left: 20px;
-  }
-  
-  form label {
-    display: block;
-    margin-bottom: 5px;
-  }
-  
-  form input, form textarea {
-    display: block;
-    width: 100%;
-    padding: 5px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 3px;
-  }
-  
-  form button[type="submit"] {
-    background-color: #333;
-    color: #fff;
-    padding: 5px 10px;
-    border: none;
-    border-radius: 3px;
-    cursor: pointer;
-  }
-  
-  footer {
-    background-color: #c11313;
-    color: #333;
-    padding: 10px;
-    text-align: center;
-    }
-        
+
+nav ul li a{
+  text-decoration: none;
+  color: #fff;
+  font-size: 13px;
+  text-transform: uppercase;
+}
+
+ul li.active a{
+  background-color: #fff;
+  color: #000;
+  width: 20px;
+  border-radius: 3px;
+  padding: 10px;
+}
+
+nav ul li a:hover{
+  color: #18e444;
+  transition: 0.5s;
+  background-color: #fff;
+  border-radius: 3px;
+  padding: 10px;
+}
+
+.row{
+  display: flex;
+  height: 88%;
+  align-items: center;   
+}
+.col{
+  flex-basis: 50%;
+}
+h1{
+  color: #fff;
+  font-size: 50px;
+}
+p{
+  color: #fff;
+  font-size: 11px;
+  line-height: 15px;
+}
+
+button{
+  width: 180px;
+  color: #000;
+  font-size: 12px;
+  padding: 12px 0;
+  background-color: #fff;
+  border-radius: 20px;
+  outline: none;
+  margin-top: 30px;
+}
+
+.card{
+  width: 200px;
+  height: 230px;
+  display: inline-block;
+  border-radius: 10px;
+  padding: 15px 25px;
+  box-sizing: border-box;
+  /* cursor: pointer; */
+  margin: 10px 15px;
+  background-position: center;
+  background-size: cover;
+  transition: transform 0.5s;
+}
+
+.card1{
+  background-image: url(/student_network_2022/assets/images/read.jpeg);
+}
+.card2{
+  background-image: url(/student_network_2022/assets/images/favorite.jpg);
+}
+.card3{
+  background-image: url(/student_network_2022/assets/images/market.jpg);
+}
+.card4{
+  background-image: url(/student_network_2022/assets/images/signup.webp);
+}
+
+.card:hover{
+  transform: translateY(-20px);
+}
+
+h5{
+  color: #840505;
+  text-shadow: 0 0 10px #000;
+}
+h5 a{
+  text-decoration: none;
+  color: #fff;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+h5 a:hover{
+  color: #e70606;
+  transition: 0.5s;
+  background-color: #fff;
+  border-radius: 3px;
+  padding: 10px
+}
+.card p{
+  text-shadow: 0 0 15px #000;
+  font-size: 8px;
+}
+
+i{
+  color: #fff;
+  font-size: 20px;
+  margin-left: 30px;
+}
+
+i:hover{
+  color: #e70606;
+  transition: 0.5s;
+  background-color: #fff;
+  border-radius: 3px;
+  padding: 10px
+}   
